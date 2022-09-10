@@ -1,0 +1,31 @@
+.breadcrumb-wrappers{
+    border-top: 2px solid var(--color-secondary);
+    border-bottom: 2px solid var(--color-secondary);
+    width: 100%;
+    padding: 0 1px;
+    padding-top: 12px;
+}
+
+
+.breadcrumb-item{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-secondary);
+    a{
+        text-decoration: none;
+        color: var(--color-secondary);
+        padding-right: 1rem;
+    }
+}
+
+.breadcrumb-item:hover{
+    a{
+        color: var(--color-tertiary);
+    }
+    color: var(--color-tertiary);
+}
+
+.breadcrumb-item+.breadcrumb-item::before{
+    color: var(--color-secondary);
+    padding-right: 1rem;
+}
